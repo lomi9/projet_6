@@ -1,0 +1,43 @@
+@import '../../styles/utilities';
+
+.cards__container{
+  @include page-padding-desktop;
+    background-color: #F6F6F6;
+  border-radius: 2vw;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem 5.2%;
+    padding: 3.7%;
+  }
+
+  @media screen and (max-width: $breakpoint-tab) {
+    .cards__container{
+      gap: 1rem 5.2%;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    .cards__container{
+      @include page-padding-mobile;
+      background-color: white;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr); 
+      grid-gap: 1.5rem;
+      padding: 0;
+    }
+  }
+
+
+  /* 
+
+  @include page-padding-desktop;
+  background-color: #F6F6F6;
+  border-radius: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    padding: 3.7%;
+
+  */ 

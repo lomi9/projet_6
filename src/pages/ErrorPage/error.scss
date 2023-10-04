@@ -1,0 +1,68 @@
+@import '../../styles/utilities';
+
+.error__title-mobile{
+    display: none;
+}
+
+.error__page{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+align-content: center;
+align-items: center;
+flex-direction: column;
+padding: 2%;
+    .error__img{
+        width: 80%;
+        max-width: 565px; 
+        padding: 4rem;
+       
+    }
+
+    .error__title{
+        @include title-style;
+        padding: 6%;
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: 400;
+    }
+
+    .error__link{
+        @include link-style;
+        font-size: 1.2rem;
+        padding: 3.5% 3.5% 6% 3.5%;
+        text-align: center;
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+    .error__title-desktop{
+        display: none;
+    }
+    .error__title-mobile{
+        display: flex;
+    }
+    .error__page {
+        padding: 10%;
+      .error__img{
+        max-width: 190px;
+      }
+      
+      .error__title{
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        padding: 6% 0;
+      }
+  
+      .error__link{
+        font-size: 0.8rem; 
+        padding: 28% 0;
+      }
+    }
+  }
+
+  
+  
+  
+  

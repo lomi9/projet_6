@@ -1,0 +1,66 @@
+@import '../../styles/utilities';
+
+.slideshow{
+    display: flex;
+    flex-wrap: wrap;
+    @include page-padding-desktop;
+    margin-bottom: 2%;
+
+
+    .image__div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 415px;
+        position: relative;
+
+        .slideshow__picture{
+            width: 100%;
+            object-fit: cover; 
+            overflow : hidden;
+            text-align: center;
+            border-radius: 26px;
+        }
+        
+    }
+
+    .icons__div{
+        position: absolute;
+    
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;    
+     
+    }
+    .slideshow__counter{
+        position: absolute;
+        color: white;
+        bottom: 20px;
+    }
+
+    .slideshow__icon{
+        cursor: pointer;
+    }
+    
+
+    @media(max-width: $breakpoint-mobile) {
+        .image__div{
+            height: 239px;
+            .slideshow__picture{
+                border-radius: 11px; ;
+            }
+    }
+    .slideshow__icon{
+       width: 24px;
+    }
+    .slideshow__counter{
+        display: none;
+    }
+}
+
+}
+
+

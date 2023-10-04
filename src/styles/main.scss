@@ -1,0 +1,30 @@
+@import 'reset';
+@import 'utilities';
+
+@import '../pages/HomePage/home';
+@import '../pages/AboutPage/about';
+@import '../pages/ErrorPage/error';
+@import '../pages/LogementPage/logement';
+
+@import '../components/Banner/banner';
+@import '../components/Card/card';
+@import '../components/CardWrapper/cardWrapper';
+@import '../components/Collapse/collapse';
+@import '../components/Footer/footer';
+@import '../components/Header/header';
+@import '../components/Slideshow/slideshow';
+
+
+
+html {
+  background-color: white;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  max-width: 1600px;
+  min-width: 320px;
+  margin: auto;
+}
+

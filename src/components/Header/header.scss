@@ -1,0 +1,58 @@
+@import '../../styles/utilities';
+
+.header {
+  display: flex;
+  background-color: white;
+  @include page-padding-desktop;
+
+  &__logo {
+    width: 20%;
+
+    &-img {
+      width: 100%;
+      display: flex;
+      object-fit: contain;
+    }
+  }
+
+  &__navbar {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 4rem;
+  }
+
+  &__navbar-link {
+    display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    @include link-style;
+  }
+  @media screen and (max-width: $breakpoint-tab) {
+
+    &__navbar{
+      gap: 1.5rem;
+    }
+
+    &__navbar-link {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    @include page-padding-mobile;
+
+    &__logo {
+      width: 70%;
+    }
+
+    &__navbar{
+      gap: 1.5rem;
+    }
+
+    &__navbar-link {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+  }
+}

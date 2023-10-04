@@ -1,0 +1,40 @@
+@import '../../styles/utilities';
+
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 5% 0 3% 0;
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__text {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: clamp(0.8rem, 2vw, 1.4rem);
+    }
+
+    &__logo-img {
+        width: clamp(5rem, 9vw, 12rem);
+    }
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      padding: 15% 0 12% 0;
+      gap: 0.8rem;
+      &__logo-img {
+        width: 8rem;
+    }
+        &__text {
+            width: 27%; 
+            text-align: center; 
+            line-height: 1.3rem;
+            font-weight: 300;
+        }
+    }
+}

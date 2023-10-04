@@ -1,0 +1,69 @@
+@import '../../styles/utilities';
+
+.banner__title-mobile{
+  display: none
+}
+
+.banner {
+@include page-padding-desktop;
+    background: {
+      size: cover;
+      position: center;
+    }
+    border-radius: 25px;
+    height: 216px;
+  
+    &__title {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.33);
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      font-size: clamp(12px, 5vw, 46px);
+      font-weight: 400;
+      height: 100%;
+      margin: 0;
+      border-radius: 25px;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-tab) {
+    .banner {
+      height: 120px;
+      &__title{
+        font-size: clamp(12px, 4vw, 46px);
+      }
+    }
+  }
+
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    .banner {
+      @include page-padding-mobile;
+      height: 104px;
+      background-size: 180%; //zoom sur l'image pour correspondre à la maquette
+      border-radius: 11px;
+    }
+
+    .banner__title-mobile{
+      display: flex;
+      color: white;
+      font-size: clamp(12px, 6vw, 46px);
+      background-color: rgba(0, 0, 0, 0.33);
+      height: 100%;
+      border-radius: 11px;
+      text-align: center;
+      font-weight: 400;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: left;
+  padding-left: 6%;
+    }
+
+    .banner__title{
+      display: none;
+    }
+  }
+  
+  

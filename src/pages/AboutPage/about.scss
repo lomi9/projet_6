@@ -1,0 +1,11 @@
+@import '../../styles/utilities';
+
+.collapse__div{
+    @include page-padding-desktop;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
