@@ -3,6 +3,9 @@
 .collapse {
   width: 84%;
   margin: 1.2% 0;
+  background-color: #F6F6F6;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 
   &__header {
     background-color: $primary-color;
