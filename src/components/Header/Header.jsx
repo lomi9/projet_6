@@ -5,7 +5,7 @@ export default function Header() {
     return (
       <>
         <header className="header">
-          <div className='header__logo'><img src={logo} alt="Logo Kasa" className='header__logo-img' /></div>
+          <Link to={'/'} className='header__logo'><img src={logo} alt="Logo Kasa" className='header__logo-img' /></Link>
           <nav className='header__navbar'>
             <Link to={`/`} className='header__navbar-link header__navbar-link--accueil'>Accueil</Link>
             <Link to={`/about`} className='header__navbar-link header__navbar-link--a-propos'>A Propos</Link>

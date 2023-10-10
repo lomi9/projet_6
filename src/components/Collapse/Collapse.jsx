@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import openArrowIcon from '../../assets/arrow_open.png';
 
 export default function Collapse({ title, content}) {
-  const [isCollapsed, setIsCollapsed] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
-    setIsCollapsed(!isCollapsed);
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -15,12 +15,12 @@ export default function Collapse({ title, content}) {
         <img
           onClick={toggleCollapse}
           src={openArrowIcon}
-          alt={isCollapsed ? 'Open' : 'Close'}
-          className={`collapse__icon ${isCollapsed ? '' : 'rotated'}`}
+          alt={isOpen ? 'Open' : 'Close'}
+          className={`collapse__icon ${isOpen ? 'rotated' : ''}`}
         />
       </div>
       <div 
-        className={`collapse__content ${isCollapsed ? 'collapsed' : 'expanded'}`}
+        className={`collapse__content ${isOpen ? 'expanded' : 'collapsed'}`}
       >
         {content}
       </div>
