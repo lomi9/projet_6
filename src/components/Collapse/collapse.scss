@@ -1,4 +1,4 @@
-@import '../../styles/utilities';
+
 
 .collapse {
   width: 84%;
@@ -6,6 +6,7 @@
   background-color: #F6F6F6;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  font-family: $font-family-main;
 
   &__header {
     background-color: $primary-color;

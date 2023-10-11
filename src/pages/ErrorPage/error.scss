@@ -1,4 +1,4 @@
-@import '../../styles/utilities';
+
 
 .error__title-mobile{
     display: none;
@@ -12,6 +12,7 @@ align-content: center;
 align-items: center;
 flex-direction: column;
 padding: 2%;
+font-family: $font-family-main;
     .error__img{
         width: 80%;
         max-width: 565px; 

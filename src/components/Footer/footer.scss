@@ -1,4 +1,4 @@
-@import '../../styles/utilities';
+
 
 .footer {
     background-color: black;
@@ -7,6 +7,7 @@
     align-items: center;
     gap: 2rem;
     padding: 5% 0 3% 0;
+    font-family: $font-family-main;
 
     &__logo {
         display: flex;

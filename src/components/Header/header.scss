@@ -1,6 +1,7 @@
-@import '../../styles/utilities';
+
 
 .header {
+  font-family: $font-family-main;
   display: flex;
   background-color: white;
   @include page-padding-desktop;

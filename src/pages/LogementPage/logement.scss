@@ -1,9 +1,10 @@
-@import '../../styles/utilities';
+
 
 $min-width-logement: 800px;
 
 .logement__host-infos-mobile{
     display: none;
+    font-family: $font-family-main;
 }
 
 .logement__header{
@@ -12,6 +13,7 @@ $min-width-logement: 800px;
     flex-wrap: wrap;
     align-items: flex-start;
     padding-bottom: 2%;
+    font-family: $font-family-main;
 
     .logement__main-infos{
     width: 80%;
@@ -19,6 +21,7 @@ $min-width-logement: 800px;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    font-family: $font-family-main;
     gap: 1rem;
     @media screen and (max-width: $breakpoint-mobile) {
         gap: 0.7rem;;
@@ -28,6 +31,7 @@ $min-width-logement: 800px;
             @include title-style;
             font-size: 2.3rem;
             width: 100%;
+            font-family: $font-family-main;
             @media screen and (max-width: $breakpoint-tab) {
                     font-size: 1.5rem;
             }
@@ -39,6 +43,7 @@ $min-width-logement: 800px;
 
         .logement__location{
             @include title-style;
+            font-family: $font-family-main;
             font-size: 3vh;
             @media screen and (max-width: $breakpoint-tab) {
                 font-size: 1rem;
@@ -50,6 +55,7 @@ $min-width-logement: 800px;
     }
     .logement__host-infos-desktop{
         display: flex;
+        font-family: $font-family-main;
         flex-wrap: wrap;
         width: 20%;
         justify-content: flex-end;
@@ -62,6 +68,7 @@ $min-width-logement: 800px;
         .host__name{
             @include title-style;
             font-size: 1.2rem;
+            font-family: $font-family-main;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
@@ -81,13 +88,15 @@ $min-width-logement: 800px;
 }
 
 .logement__tags-stars{
-    margin: 0.5% 7%;;
+    margin: 0.5% 7%;
+    font-family: $font-family-main;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     .tags {
         display: flex;
+        font-family: $font-family-main;
         flex-wrap: wrap;
         gap: 10px;
         align-items: center;
@@ -100,6 +109,7 @@ $min-width-logement: 800px;
       
         .tag {
           background-color: $primary-color;
+          font-family: $font-family-main;
           color: white;
           height: 28px;
           border-radius: 11px;
@@ -146,14 +156,19 @@ $min-width-logement: 800px;
         align-items: flex-start;
         gap: 6%;
 
+        @media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tab){
+            flex-direction: column;
+            width: 100%;
+            padding-top: 5%;
+        }
         @media screen and (max-width: $breakpoint-mobile){
             flex-direction: column;
         }
-
     }
 
     @media screen and (max-width: $breakpoint-mobile) {
         .logement__host-infos-mobile{
+            font-family: $font-family-main;
             display: flex;
             flex-wrap: wrap;
         justify-content: flex-end;

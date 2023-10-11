@@ -1,10 +1,11 @@
-@import '../../styles/utilities';
+
 
 .banner__title-mobile{
   display: none
 }
 
 .banner {
+  font-family: $font-family-main;
 @include page-padding-desktop;
     background: {
       size: cover;

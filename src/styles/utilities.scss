@@ -3,6 +3,10 @@ $breakpoint-tab: 768px;
 $primary-color: #FF6060;
 $font-family-main: 'Montserrat', sans-serif;
 
+$card-border-radius: 10px;
+$card-title-font-weight: 300;
+$card-title-max-width: 60%;
+
 @mixin page-padding-desktop {
     margin: 3% 7%;
 }

@@ -1,10 +1,7 @@
-@import '../../styles/utilities';
 
-$card-border-radius: 10px;
-$card-title-font-weight: 300;
-$card-title-max-width: 60%;
 
 .card {
+  font-family: $font-family-main;
   &__img{
     height: 22vw;
     border-radius: $card-border-radius;
@@ -33,6 +30,7 @@ $card-title-max-width: 60%;
     padding: 6%;
     height: 3em;
     line-height: 1.2em;
+    font-family: $font-family-main;
   }
 }
 

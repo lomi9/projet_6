@@ -1,4 +1,4 @@
-@import '../../styles/utilities';
+
 
 .collapse__div{
     @include page-padding-desktop;
@@ -7,5 +7,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-family: $font-family-main;
 
 }
