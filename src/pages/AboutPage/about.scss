@@ -1,4 +1,4 @@
-
+@import "../../styles/utilities.scss";
 
 .collapse__div{
     @include page-padding-desktop;
@@ -8,5 +8,4 @@
     justify-content: center;
     align-items: center;
     font-family: $font-family-main;
-
 }

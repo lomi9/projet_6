@@ -1,4 +1,4 @@
-
+@import "../../styles/utilities.scss";
 
 .footer {
     background-color: black;
@@ -7,7 +7,7 @@
     align-items: center;
     gap: 2rem;
     padding: 5% 0 3% 0;
-    font-family: $font-family-main;
+
 
     &__logo {
         display: flex;
@@ -19,6 +19,7 @@
         display: flex;
         justify-content: center;
         font-size: clamp(0.8rem, 2vw, 1.4rem);
+        font-family: $font-family-main;
     }
 
     &__logo-img {

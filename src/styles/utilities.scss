@@ -2,10 +2,9 @@ $breakpoint-mobile: 375px;
 $breakpoint-tab: 768px;
 $primary-color: #FF6060;
 $font-family-main: 'Montserrat', sans-serif;
-
-$card-border-radius: 10px;
-$card-title-font-weight: 300;
-$card-title-max-width: 60%;
+$card-border-radius: 9px;
+$card-title-font-weight: 200;
+$card-title-max-width: 1000px;
 
 @mixin page-padding-desktop {
     margin: 3% 7%;

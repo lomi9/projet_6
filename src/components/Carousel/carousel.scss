@@ -1,11 +1,10 @@
-
+@import "../../styles/utilities.scss";
 
 .slideshow{
     display: flex;
     flex-wrap: wrap;
     @include page-padding-desktop;
     margin-bottom: 2%;
-    font-family: $font-family-main;
 
 
     .image__div{
@@ -40,6 +39,7 @@
         position: absolute;
         color: white;
         bottom: 20px;
+        font-family: $font-family-main;
     }
 
     .slideshow__icon{

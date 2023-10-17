@@ -2,36 +2,40 @@ import React, { useState } from 'react';
 import previousIcon from '../../assets/arrow_previous.png';
 import nextIcon from '../../assets/arrow_next.png';
 
-export default function Slideshow({ logement }) {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+export default function Carousel({ logement }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const goToNextImage = () => {
-    if (currentImageIndex === logement.pictures.length - 1) {
-      setCurrentImageIndex(0);
+  const showNextImage = () => {
+    if (currentIndex === logement.pictures.length - 1) {
+      setCurrentIndex(0); // Si on est sur la dernière image + click suivant, on reviens à la première image
     } else {
-      setCurrentImageIndex(currentImageIndex + 1);
+      setCurrentIndex(currentIndex + 1); 
     }
   };
 
-  const goToPreviousImage = () => {
-    if (currentImageIndex === 0) {
-      setCurrentImageIndex(logement.pictures.length - 1);
+  const showPreviousImage = () => {
+    if (currentIndex === 0) {
+      setCurrentIndex(logement.pictures.length - 1);// Si on est sur la première image + click précédant, on va à la dernière image
     } else {
-      setCurrentImageIndex(currentImageIndex - 1);
+      setCurrentIndex(currentIndex - 1); 
     }
   };
 
-  if (!logement) {
-    return <div>Ce logement n'existe pas</div>;
+
+   if (!logement) {
+    return null;
+    //<div>Ce logement n'existe pas</div>
   }
+
+  
 
   return (
     <div className="slideshow">
         <div className='image__div'>
 
       <img
-          src={logement.pictures[currentImageIndex]}
-          alt={`Image ${currentImageIndex + 1}`}
+          src={logement.pictures[currentIndex]}
+          alt={`Image ${currentIndex + 1}`}
           className="slideshow__picture"
         />
         
@@ -40,21 +44,21 @@ export default function Slideshow({ logement }) {
             <img
               src={previousIcon}
               alt="Image précédente"
-              onClick={goToPreviousImage}
+              onClick={showPreviousImage}
               className="slideshow__icon slideshow__icon--left"
             />
 
             <img
               src={nextIcon}
               alt="Image suivante"
-              onClick={goToNextImage}
+              onClick={showNextImage}
               className="slideshow__icon slideshow__icon--right"
             />
           </div>
         )}
         
         <div className="slideshow__counter">
-          {currentImageIndex + 1}/{logement.pictures.length}
+          {currentIndex + 1}/{logement.pictures.length}
         </div>
         </div>
       </div>

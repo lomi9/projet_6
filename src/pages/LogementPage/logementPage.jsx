@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import Slideshow from '../../components/Slideshow/Slideshow';
 import Header from '../../components/Header/Header';
 import logements from '../../logements.json';
 import Collapse from '../../components/Collapse/Collapse';
 import Footer from '../../components/Footer/Footer';
 import starActive from "../../assets/star-active.png";
 import starInactive from "../../assets/star-inactive.png";
+import Carousel from '../../components/Carousel/Carousel';
 
 
 export default function LogementPage() {
@@ -37,7 +37,7 @@ export default function LogementPage() {
   return (
     <>
       <Header />
-      <Slideshow logement={logement} />
+      <Carousel logement={logement} />
       <section className='logement__header'>
         <div className='logement__main-infos'>
             <h1 className='logement__title'>{logement?.title}</h1>

@@ -1,7 +1,6 @@
-
+@import "../../styles/utilities.scss";
 
 .header {
-  font-family: $font-family-main;
   display: flex;
   background-color: white;
   @include page-padding-desktop;
@@ -21,6 +20,7 @@
     width: 100%;
     justify-content: flex-end;
     gap: 4rem;
+    font-family: $font-family-main;
   }
 
   &__navbar-link {

@@ -1,11 +1,10 @@
-
+@import "../../styles/utilities.scss";
 
 .banner__title-mobile{
   display: none
 }
 
 .banner {
-  font-family: $font-family-main;
 @include page-padding-desktop;
     background: {
       size: cover;
@@ -26,6 +25,7 @@
       height: 100%;
       margin: 0;
       border-radius: 25px;
+      font-family: $font-family-main;
     }
   }
 
