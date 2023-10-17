@@ -30,34 +30,34 @@ export default function Carousel({ logement }) {
   
 
   return (
-    <div className="slideshow">
-        <div className='image__div'>
+    <div className="carousel">
+        <div className='carousel__div'>
 
-      <img
-          src={logement.pictures[currentIndex]}
-          alt={`Image ${currentIndex + 1}`}
-          className="slideshow__picture"
-        />
-        
-        {logement.pictures.length > 1 && (
-          <div className='icons__div'>
             <img
-              src={previousIcon}
-              alt="Image précédente"
-              onClick={showPreviousImage}
-              className="slideshow__icon slideshow__icon--left"
+            src={logement.pictures[currentIndex]}
+            alt={`Image ${currentIndex + 1}`}
+            className="carousel__div-picture"
             />
+        
+            {logement.pictures.length > 1 && (
+            <div className='carousel__div-icon'>
+                <img
+                src={previousIcon}
+                alt="précédent"
+                onClick={showPreviousImage}
+                className="carousel__icon"
+                />
 
             <img
               src={nextIcon}
-              alt="Image suivante"
+              alt="suivant"
               onClick={showNextImage}
-              className="slideshow__icon slideshow__icon--right"
+              className="carousel__icon"
             />
           </div>
         )}
         
-        <div className="slideshow__counter">
+        <div className="carousel__div-counter">
           {currentIndex + 1}/{logement.pictures.length}
         </div>
         </div>
