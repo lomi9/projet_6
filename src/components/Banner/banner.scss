@@ -48,6 +48,7 @@
     }
 
     .banner__title-mobile{
+      font-family: $font-family-main;
       display: flex;
       color: white;
       font-size: clamp(12px, 6vw, 46px);

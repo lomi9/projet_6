@@ -15,11 +15,14 @@ export default function LogementPage() {
   const navigate = useNavigate();
   const logement = logements.find((logement) => logement.id === id);
 
+
+
   useEffect(() => {
-    if (!logement) {
-        navigate("/error");
-    }
-}, [logement, navigate]);
+    if (logement === undefined) {
+      navigate("/error");
+     
+  }
+}, []);
 
 
   const renderStars = (rating) => {

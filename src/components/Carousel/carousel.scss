@@ -48,19 +48,19 @@
     
 
     @media(max-width: $breakpoint-mobile) {
-        .image__div{
+        &__div{
             height: 239px;
-            .carousel__picture{
+            &-picturepicture{
                 border-radius: 11px; ;
             }
+             &-counter{
+                display: none;
+            }
+        }
+        .carousel__icon{
+                width: 24px;
+            }
     }
-    .carousel__icon{
-       width: 24px;
-    }
-    .carousel__counter{
-        display: none;
-    }
-}
 
 }
 

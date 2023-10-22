@@ -3,8 +3,11 @@ import previousIcon from '../../assets/arrow_previous.png';
 import nextIcon from '../../assets/arrow_next.png';
 
 export default function Carousel({ logement }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  if (!logement) {
+    return null;
+   } 
   const showNextImage = () => {
     if (currentIndex === logement.pictures.length - 1) {
       setCurrentIndex(0); // Si on est sur la dernière image + click suivant, on reviens à la première image
@@ -22,10 +25,7 @@ export default function Carousel({ logement }) {
   };
 
 
-   if (!logement) {
-    return null;
-    //<div>Ce logement n'existe pas</div>
-  }
+   
 
   
 
