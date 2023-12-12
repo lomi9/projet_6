@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/projet_6/static/css/main.de327618.css",
+    "main.js": "/projet_6/static/js/main.709f7f61.js",
+    "static/media/mountains_banner.png": "/projet_6/static/media/mountains_banner.99f7812e0a8dc0973adc.png",
+    "static/media/landscape_banner.png": "/projet_6/static/media/landscape_banner.0b3373d85749b68829c5.png",
+    "index.html": "/projet_6/index.html",
+    "main.de327618.css.map": "/projet_6/static/css/main.de327618.css.map",
+    "main.709f7f61.js.map": "/projet_6/static/js/main.709f7f61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de327618.css",
+    "static/js/main.709f7f61.js"
+  ]
+}
